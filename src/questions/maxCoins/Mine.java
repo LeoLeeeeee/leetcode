@@ -1,5 +1,7 @@
 package questions.maxCoins;
 
+import java.util.Arrays;
+
 /**
  * 312.戳气球
  * 有 n 个气球，编号为0 到 n-1，每个气球上都标有一个数字，这些数字存在数组 nums 中。
@@ -28,7 +30,6 @@ public class Mine {
                         ans[j][j+i] = maxAns;
                 }
             }
-
         }
         return ans[0][ans.length-1];
     }
